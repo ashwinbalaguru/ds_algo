@@ -13,6 +13,7 @@ def bubble_sort(a)
       i += 1
     end
   end
+  a
 end
 
 

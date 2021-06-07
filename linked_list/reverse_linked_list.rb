@@ -38,3 +38,29 @@ class Solution
         prev
     end
 end
+
+
+# 206. Reverse Linked List
+
+# Add to List
+
+# Share
+# Reverse a singly linked list.
+
+# Example:
+
+# Input: 1->2->3->4->5->NULL
+# Output: 5->4->3->2->1->NULL
+# Follow up:
+
+# A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+def reverse_list(head)
+    data = []
+    current_node = head
+    while current_node != nil
+        data << current_node.val
+        current_node = current_node.next
+    end
+    data.reverse
+end
